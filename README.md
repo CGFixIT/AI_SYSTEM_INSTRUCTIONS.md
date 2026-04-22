@@ -13,7 +13,8 @@ License
 The MIT License applies only to:
   • /template.md
 
-All other files (including **specific** /examples )
+All other files
+(including **specific** /examples )
 are provided for reference only and are NOT covered by the MIT license.
 ```
 ---
