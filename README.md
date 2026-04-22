@@ -1,5 +1,6 @@
 Azure Open AI: Production-tested system instructions for enterprise AI agents
-# Universal AI Agent Safety Template (With specific examples)
+# Universal AI Agent Safety
+(With specific examples)
 
 > Production-tested system instructions for enterprise AI agents that prioritize accuracy, version-control, and anti-hallucination safeguards.
 
