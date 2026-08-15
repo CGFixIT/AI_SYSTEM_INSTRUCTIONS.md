@@ -21,6 +21,7 @@ The MIT License applies only to:
   - /examples/langchain-agents-5.6Sol.md
   - /examples/legal-compliance.md
   - /examples/legal-compliance-5.6Sol.md
+  - /examples/manufacturing-iot.md
   - /examples/Network&SecurityAgent.md
   - /examples/Network&SecurityAgent-5.6Sol.md
   - /examples/ps1AgentCoder.md
@@ -62,20 +63,22 @@ Designed for real-world deployment in **Azure AI Studio**, **Microsoft Copilot S
 - incident-response.md (DevOps incident response and SRE runbooks/postmortems)
 - langchain-agents.md (Deep Agents harnesses with local open-weight models, scoped tools, HITL, and CyClaw references)
 - legal-compliance.md (Modern technology legal/compliance workflows)
+- manufacturing-iot.md (Manufacturing IoT operations and industrial asset monitoring)
 - Network&SecurityAgent.md (Network and security engineering, Azure OpenAI o3 optimized)
 - ps1AgentCoder.md (PowerShell coding agent, PS 5.1 + 7+)
 - pythonAgentCoder.md (Python coding agent, 3.12+)
 - veeamGPT.md (Veeam Backup & Replication reference only, not MIT)
 - yaragenerator.md (YARA rule generator and cross-platform integration)
 
-Each example also has a `-5.6Sol.md` counterpart for OpenAI GPT-5.6 Sol. These
-variants replace o3-specific internal reasoning checklists with lean, outcome-first
-execution policies while preserving each domain's safety, source, escalation, and
-verification requirements. They follow the current
+The existing deployable examples have `-5.6Sol.md` counterparts for OpenAI GPT-5.6
+Sol. These variants replace o3-specific internal reasoning checklists with lean,
+outcome-first execution policies while preserving each domain's safety, source,
+escalation, and verification requirements. They follow the current
 [GPT-5.6 prompting guidance](https://developers.openai.com/api/docs/guides/model-guidance?model=gpt-5.6).
 Each Sol variant also defines an Enterprise personal-agent boundary for active-workspace
 scope, current-user authority, approved connector use, denied access, and untrusted
-retrieved content.
+retrieved content. Run the repository's `sol-optimize` workflow before deploying a
+new domain example on GPT-5.6 Sol.
 
 ---
 
@@ -307,6 +310,7 @@ https://helpcenter.veeam.com/archive/vbaws/40/guide/encryption_repository_level.
 │   ├── langchain-agents-5.6Sol.md ← GPT-5.6 Sol-tailored Deep Agents harnesses
 │   ├── legal-compliance.md        ← Modern technology legal/compliance workflows
 │   ├── legal-compliance-5.6Sol.md ← GPT-5.6 Sol-tailored legal/compliance workflows
+│   ├── manufacturing-iot.md      ← Manufacturing IoT operations and industrial asset monitoring
 │   ├── Network&SecurityAgent.md   ← Network & security engineering (Azure OpenAI o3 optimized)
 │   ├── Network&SecurityAgent-5.6Sol.md ← Network & security engineering for GPT-5.6 Sol
 │   ├── ps1AgentCoder.md           ← PowerShell coding agent (PS 5.1 + 7+)
@@ -352,6 +356,7 @@ AI agent instructions based on the [Universal AI Agent Safety Template](https://
 
 ## Version History
 
+- **v1.14** (Aug 2026): Added `examples/manufacturing-iot.md` for evidence-driven manufacturing IoT operations, OT safety, read-only diagnostics, approval-gated changes, and escalation
 - **v1.13** (Jul 2026): Added ChatGPT Enterprise personal-agent workspace, RBAC, connector, and evidence boundaries to every GPT-5.6 Sol example and documented a least-privilege Enterprise deployment path
 - **v1.12** (Jul 2026): Added a GPT-5.6 Sol-tailored `-5.6Sol.md` counterpart for every deployable example while retaining the complete o3-focused set
 - **v1.11** (Jul 2026): Added `examples/langchain-agents.md` for governed Deep Agents harnesses using local open-weight models, scoped tools, deterministic evaluation, human approval, and pinned CyClaw references
