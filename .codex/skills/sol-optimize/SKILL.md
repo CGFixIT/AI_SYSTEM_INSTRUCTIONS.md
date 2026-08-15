@@ -12,7 +12,7 @@ surfaces unless the user explicitly expands scope.
 
 1. Establish scope.
    - If the user names an `examples/*.md` file, target only that file.
-   - Otherwise inventory every example and select the smallest coherent set with a
+   - Otherwise inventory every example (with the sol suffix in file name)and select the smallest coherent set with a
      concrete Sol-specific problem.
    - Run `python .codex/scripts/repo_audit.py analyze .` before editing.
    - Treat its o3 guidance result as baseline hygiene, not proof of Sol readiness.
